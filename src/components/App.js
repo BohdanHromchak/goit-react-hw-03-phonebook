@@ -20,7 +20,7 @@ componentDidMount() {
 const savedContacts = localStorage.getItem('contacts')
 if(savedContacts !== null) {
   const parsedContacts = JSON.parse(savedContacts)
-  this.setState({contact: parsedContacts})
+  this.setState({contacts: parsedContacts})
   return
 }
 this.setState({contacts: initialContacts})
